@@ -10,12 +10,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .parent {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #2d4059;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 20px;
   /* flex-direction: column; */
 }
 
@@ -41,7 +42,7 @@ body {
     margin-bottom: 5px;
 } */
 
-.box{
+.box {
   color: #2d4059;
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
@@ -50,35 +51,35 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 350px;
-  width: 800px;
+  height: 400px;
+  width: 60%;
   background-color: #fefdca;
   padding: 40px 150px;
   border-radius: 20px;
 }
 
-.box1{
+.box1 {
   color: #2d4059;
   font-family: "montserrat", sans-serif;
   font-size: 1.6em;
   font-weight: 600;
   flex-direction: column;
-  height: 85vh;
+  /* height: 85vh; */
   width: 70vw;
   background-color: #fefdca;
   padding: 50px 0 50px 80px;
   border-radius: 20px;
   display: none;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
-.que1 .q{
-    margin-bottom: 20px;
+.que1 .q {
+  margin-bottom: 20px;
 }
 
-.box1 .que1{
-    /* text-align: left; */
-    margin-bottom: 70px;
+.box1 .que1 {
+  /* text-align: left; */
+  margin-bottom: 70px;
 }
 
 .btn {
@@ -92,28 +93,27 @@ body {
   color: #2d4059;
 }
 
-.btn:hover{
-    background-color: #2d4059;
-    color: #fff;
+.btn:hover {
+  background-color: #2d4059;
+  color: #fff;
 }
 
+.btn1 {
+  margin-top: 10px;
+  font-weight: 700;
+  padding: 8px 70px;
+  border: 3px solid #2d4059;
+  border-radius: 5px;
+  font-family: "ubuntu", sans-serif;
+  font-size: 0.8em;
+  color: #2d4059;
+  width: 300px;
+}
 
-.btn1{
-    margin-top: 10px;
-    font-weight: 700;
-    padding: 8px 70px;
-    border: 3px solid #2d4059;
-    border-radius: 5px;
-    font-family: "ubuntu", sans-serif;
-    font-size: 0.8em;
-    color: #2d4059;
-    width: 300px;
-  }
-  
-  .btn1:hover{
-      background-color: #2d4059;
-      color: #fff;
-  }
+.btn1:hover {
+  background-color: #2d4059;
+  color: #fff;
+}
 /* .btn a {
   font-family: "ubuntu", sans-serif;
   text-decoration: none;
@@ -121,21 +121,92 @@ body {
   color: #2d4059;
 } */
 
-.log1{
-    font-size: 2em;
+.log1 {
+  font-size: 2em;
 }
 
+.t2 {
+  /* display: block; */
+  height: 30px;
+  border: none;
+  border-bottom: 5px solid #2d4059;
+  color: #2d4059;
+  width: 500px;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  background-color: transparent;
+}
 
-.t2{
-    /* display: block; */
-    height: 30px;
-    border: none;
-    border-bottom: 5px solid #2d4059;
-    color: #2d4059;
-    width: 500px;
-    padding: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9em;
-    font-weight: 600;
-    background-color: transparent;
+.h3 {
+  /* height: 20px; */
+  /* background-color: #fff; */
+  margin-bottom: 25px;
+  text-decoration: underline;
+  font-size: 1em;
+  color: #ff5900;
+}
+
+@media (max-width: 768px) {
+  .box1 {
+    width: 90%;
+    padding: 40px;
   }
+
+  .box {
+    font-size: 1.4em;
+    padding: 50px;
+  }
+
+  .t1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .parent {
+    padding: 20px;
+  }
+  .box1 {
+    width: 90%;
+    padding: 20px;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .box {
+    font-size: 1.3em;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .t1 {
+    width: 80%;
+  }
+
+  .box1 .que1 {
+    /* text-align: left; */
+    margin-bottom: 40px;
+  }
+  .t1 {
+    height: 20px;
+    border-bottom: 3px solid #2d4059;
+    width: 90%;
+  }
+
+  .t2 {
+    height: 20px;
+    border-bottom: 3px solid #2d4059;
+    width: 90%;
+  }
+
+  .btn {
+    margin-top: 0px;
+  }
+  .btn1 {
+    width: 50%;
+    text-align: center;
+    padding: 8px 30px;
+  }
+}
